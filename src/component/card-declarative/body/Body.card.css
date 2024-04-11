@@ -1,0 +1,41 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.card-number {
+  display: flex;
+  font-family: "BasierCircle-Medium";
+  font-size: calc(26 / 16 * 1rem);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details:nth-of-type(2) > .title {
+  transform: translateX(-1px);
+}
+
+.card-details {
+  display: flex;
+  gap: 40px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.details .title {
+  font-size: calc(12 / 16 * 1rem);
+  line-height: 16px;
+  color: hsla(245, 15%, 85%, 1);
+}
+
+.details .value {
+  height: 100%;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 24px;
+  font-family: "BasierCircle-Medium";
+}

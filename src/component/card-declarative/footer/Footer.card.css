@@ -1,0 +1,15 @@
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-basis: 60px;
+  border-radius: inherit;
+  font-size: calc(18 / 16 * 1rem);
+  text-transform: uppercase;
+}
+
+.card-footer > img {
+  width: 100%;
+  height: 18.45px;
+  max-width: fit-content;
+}

@@ -1,0 +1,103 @@
+section {
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 392px;
+  width: 100%;
+  min-height: 252px;
+  border-radius: 20px;
+  color: white;
+  background-image: url("../../assets/images/card-background.svg");
+  background-size: cover;
+  padding: 24px;
+}
+
+@media (max-width: 1500px) {
+  /* Laptop */
+  section {
+    max-width: 362px;
+    min-height: 232px;
+  }
+
+  .card-number {
+    font-size: calc(24 / 16 * 1rem);
+  }
+}
+
+@media (max-width: 1100px) {
+  /* Tablets */
+  section {
+    max-width: 322px;
+    min-height: 192px;
+  }
+
+  .card-header span {
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .card-number {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .card-footer {
+    font-size: calc(16 / 16 * 1rem);
+  }
+}
+
+@media (max-width: 550px) {
+  /* Phones L & M */
+  section {
+    max-width: 290px;
+    height: 192px;
+  }
+
+  .card-header span {
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .card-number {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  .card-footer {
+    font-size: calc(16 / 16 * 1rem);
+  }
+}
+
+@media (max-width: 320px) {
+  /* Phones S */
+  section {
+    max-width: 235px;
+    min-height: 152px;
+  }
+
+  .card-header span {
+    padding: 2px 10px;
+  }
+
+  .card-body {
+    padding: 7px 0;
+  }
+
+  .card-number {
+    font-size: calc(16 / 16 * 1rem);
+  }
+
+  .secret {
+    width: 5px;
+    height: 5px;
+  }
+
+  .details .title {
+    font-size: calc(10 / 16 * 1rem);
+  }
+
+  .details .value {
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  .card-footer {
+    font-size: calc(14 / 16 * 1rem);
+  }
+}
