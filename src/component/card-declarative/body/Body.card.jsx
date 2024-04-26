@@ -7,8 +7,22 @@ import "./Body.card.css";
 
 export const Body = ({ cvc, expiration, number }) => {
   const { show } = useCardContext();
+  const cardNumbers = show ? (
+    <>
+      <Dot repetition={4} />
+      <span>{number.split(" ").at(-1)}</span>
+    </>
+  ) : (
+    <span>{number}</span>
+  );
 
   const getDetails = () => {
+    const cvcNumbers = show ? (
+      <span className="value">{cvc}</span>
+    ) : (
+      <Dot repetition={3} classes={["value"]} />
+    );
+
     return (
       <div className="card-details">
         <div className="details">
@@ -18,11 +32,7 @@ export const Body = ({ cvc, expiration, number }) => {
 
         <div className="details">
           <span className="title">cvc</span>
-          {!show ? (
-            <Dot repetition={3} classes={["value"]} />
-          ) : (
-            <span className="value">{cvc}</span>
-          )}
+          {cvcNumbers}
         </div>
       </div>
     );
@@ -30,17 +40,7 @@ export const Body = ({ cvc, expiration, number }) => {
 
   return (
     <article className="card-body">
-      <span className="card-number">
-        {!show ? (
-          <>
-            <Dot repetition={4} />
-            <span>{number.split(" ").at(-1)}</span>
-          </>
-        ) : (
-          <span>{number}</span>
-        )}
-      </span>
-
+      <span className="card-number">{cardNumbers}</span>
       {getDetails()}
     </article>
   );

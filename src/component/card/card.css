@@ -3,8 +3,8 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 392px;
-  width: 100%;
+  width: clamp(235px, 80%, 392px);
+  max-width: 100%;
   min-height: 252px;
   border-radius: 20px;
   color: white;

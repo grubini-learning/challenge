@@ -1,4 +1,4 @@
-:root {
+& {
   --checkbox-border-color: hsla(218, 13%, 66%, 1);
   --checkbox-checked-color: hsla(338, 89%, 49%, 1);
   --checkbox-hover-color: #a3cef1;

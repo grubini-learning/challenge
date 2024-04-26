@@ -32,12 +32,14 @@ export const useCardContext = () => {
 };
 
 function App() {
+  const cardsProps = { ...cards[0] };
+
   return (
     <div className="App">
       <CardContextProvider>
-        <Card card={{ ...cards[0] }} />
+        <Card card={cardsProps} />
         <Checkbox>Show details</Checkbox>
-        <CardDeclarative card={{ ...cards[0] }} />
+        <CardDeclarative card={cardsProps} />
       </CardContextProvider>
     </div>
   );
