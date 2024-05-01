@@ -6,6 +6,7 @@
   border-radius: inherit;
   font-size: calc(18 / 16 * 1rem);
   text-transform: uppercase;
+  color: currentColor;
 }
 
 .card-footer > img {

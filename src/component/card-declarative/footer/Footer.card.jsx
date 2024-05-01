@@ -1,18 +1,16 @@
 import PropTypes from "prop-types";
 
-import VisaLogo from "../../../assets/images/visa-logo.svg";
-
 import "./Footer.card.css";
 
-export const Footer = ({ zip }) => {
+export const Footer = ({ textColor = "white", children }) => {
   return (
-    <footer className="card-footer">
-      <span>zip {zip}</span>
-      <img srcSet={VisaLogo} alt="Visa logo" />
+    <footer style={{ color: textColor }} className="card-footer">
+      {children}
     </footer>
   );
 };
 
 Footer.propTypes = {
-  zip: PropTypes.string,
+  children: PropTypes.node,
+  textColor: PropTypes.string,
 };

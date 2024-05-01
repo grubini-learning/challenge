@@ -8,9 +8,9 @@ section {
   min-height: 252px;
   border-radius: 20px;
   color: white;
-  background-image: url("../../assets/images/card-background.svg");
   background-size: cover;
   padding: 24px;
+  box-shadow: 0.5px 1px 1px hsl(0deg 0% 50% / 0.7);
 }
 
 @media (max-width: 1500px) {

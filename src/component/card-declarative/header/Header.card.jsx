@@ -1,12 +1,11 @@
+import PropTypes from "prop-types";
+
 import "./Header.card.css";
 
-import BenepassLogo from "../../../assets/images/benepass-logo.svg";
+export const Header = ({ children }) => {
+  return <header className="card-header">{children}</header>;
+};
 
-export const Header = () => {
-  return (
-    <header className="card-header">
-      <img srcSet={BenepassLogo} alt="Benepass logo" />
-      <span>Virtual</span>
-    </header>
-  );
+Header.propTypes = {
+  children: PropTypes.node,
 };

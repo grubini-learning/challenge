@@ -2,6 +2,10 @@
 
 This challenge allows a deeper view in the development flow and the considerations taken to tackle a HTML/CSS challenge.
 
+## Product
+
+![alt text](image.png)
+
 ## Considerations
 
 - Media queries for
@@ -74,3 +78,36 @@ Data will show for both cards by checking the one checkbox.
        npm start
    ```
 3. visit [http://localhost:3000](http://localhost:3000)
+
+### Ideas
+
+1. Accept the header, body and footer as children
+
+- create a tag component
+- benepassLogo component, take advantage of css currentColor
+- parent
+  - accept a card image url
+  - export header and footer
+  - use children
+
+```jsx
+<CardDeclarative cardBackground="">
+  <CardDeclarative.Header>...</CardDeclarative.Header>
+
+  <Body {...card} textColor="" />
+
+  <CardDeclarative.Footer>...</CardDeclarative.Footer>
+</CardDeclarative>
+```
+
+2. Pass render props
+
+```jsx
+<CardDeclarative
+  headerProps={...}
+  bodyProps={...}
+  footerProps={...}
+/>
+```
+
+3. Pass props

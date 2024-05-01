@@ -8,6 +8,6 @@
 .secret {
   width: 6px;
   height: 6px;
-  background-color: white;
+  background-color: currentColor;
   border-radius: 50%;
 }

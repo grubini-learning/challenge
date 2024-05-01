@@ -5,15 +5,15 @@ import { useCardContext } from "../../../App";
 
 import "./Body.card.css";
 
-export const Body = ({ cvc, expiration, number }) => {
+export const Body = ({ cvc, expiration, number, textColor = "white" }) => {
   const { show } = useCardContext();
   const cardNumbers = show ? (
+    <span>{number}</span>
+  ) : (
     <>
       <Dot repetition={4} />
       <span>{number.split(" ").at(-1)}</span>
     </>
-  ) : (
-    <span>{number}</span>
   );
 
   const getDetails = () => {
@@ -39,7 +39,7 @@ export const Body = ({ cvc, expiration, number }) => {
   };
 
   return (
-    <article className="card-body">
+    <article className="card-body" style={{ color: textColor }}>
       <span className="card-number">{cardNumbers}</span>
       {getDetails()}
     </article>
@@ -50,4 +50,5 @@ Body.propTypes = {
   cvc: PropTypes.string,
   expiration: PropTypes.string,
   number: PropTypes.string,
+  textColor: PropTypes.string,
 };

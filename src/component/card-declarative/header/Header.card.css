@@ -5,16 +5,3 @@
   flex-basis: 60px;
   border-radius: inherit;
 }
-
-.card-header > span {
-  display: flex;
-  font-family: "BasierCircle-Medium";
-  line-height: 24px;
-  font-size: calc(16 / 16 * 1rem);
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 4px 12px;
-  border-radius: 40px;
-  color: hsla(245, 53%, 24%, 1);
-}
