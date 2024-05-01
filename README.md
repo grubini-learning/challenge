@@ -6,6 +6,8 @@ This challenge allows a deeper view in the development flow and the consideratio
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
+
 ## Considerations
 
 - Media queries for
